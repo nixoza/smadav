@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/token.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -31,10 +32,29 @@
 
 <p>Smadav adalah antivirus untuk proteksi tambahan komputer Anda, proteksi total USB Flashdisk, dan pembersihan virus yang menyebarluas.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>Simple Local Data Search</h2>
+    <div>
+        <input type="text" id="demo-input-local" name="blah" />
+        <input type="button" value="Submit" />
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#demo-input-local").tokenInput([
+                {id: 7, name: "Ruby"},
+                {id: 11, name: "Python"},
+                {id: 13, name: "JavaScript"},
+                {id: 17, name: "ActionScript"},
+                {id: 19, name: "Scheme"},
+                {id: 23, name: "Lisp"},
+                {id: 29, name: "C#"},
+                {id: 31, name: "Fortran"},
+                {id: 37, name: "Visual Basic"},
+                {id: 41, name: "C"},
+                {id: 43, name: "C++"},
+                {id: 47, name: "Java"}
+            ]);
+        });
+        </script>
+    </div>
 
 <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
